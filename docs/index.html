@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="MambaPEFT: Exploring Parameter-Efficient Fine-Tuning for Mamba">
+  <meta property="og:title" content="MambaPEFT: Exploring Parameter-Efficient Fine-Tuning for Mamba"/>
+  <meta property="og:description" content="MambaPEFT: Exploring Parameter-Efficient Fine-Tuning for Mamba"/>
+  <meta property="og:url" content="https://github.com/sony.io/MambaPEFT/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/mambapeft_overview.png" />
+  <meta property="og:image:width" content="651"/>
+  <meta property="og:image:height" content="973"/>
+
+
+  <meta name="twitter:title" content="MambaPEFT: Exploring Parameter-Efficient Fine-Tuning for Mamba">
+  <meta name="twitter:description" content="Exploring parameter-efficient fine-tuning for Mamba">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/mambapeft_overview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Mamba, PEFT, parameter-efficient fine-tuning, transfer learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>MambaPEFT: Exploring Parameter-Efficient Fine-Tuning for Mamba</title>
+  <link rel="icon" type="image/x-icon" href="static/images/title.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <style>
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+  
+    .responsive-image {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">MambaPEFT: Exploring Parameter-Efficient Fine-Tuning for Mamba</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/yoshimura-masakazu-431b1a242/" target="_blank">Masakazu Yoshimura</a><sup>*</sup>,</span>
+                <span class="author-block">
+                  <a href="https://www.linkedin.com/in/teruaki-hayashi-a47563126/" target="_blank">Teruaki Hayashi</a><sup>*</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://www.linkedin.com/in/yota-maeda/" target="_blank">Yota Maeda</a>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <!-- <span class="author-block">Sony<br>ICLR 2025</span> -->
+                    <span class="author-block">Sony Group Corporation</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2411.03855.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="https://openreview.net/forum?id=UAKnJMIBwf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>ICLR2025</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/sony/MambaPEFT" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2411.03855" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            An ecosystem of Transformer-based models has been established by building large models with extensive data. 
+Parameter-efficient fine-tuning (PEFT) is a crucial technology for deploying these models to downstream tasks with minimal cost while achieving effective performance. Recently, Mamba, a State Space Model (SSM)-based model, has attracted attention as a potential alternative to Transformers. While many large-scale Mamba-based models have been proposed, efficiently adapting pre-trained Mamba-based models to downstream tasks remains unexplored.
+In this paper, we conduct an exploratory analysis of PEFT methods for Mamba. We investigate the effectiveness of existing PEFT methods for Transformers when applied to Mamba. We also modify these methods to better align with the Mamba architecture. Additionally, we propose new Mamba-specific PEFT methods that leverage the distinctive structure of Mamba. Our experiments indicate that PEFT performs more effectively for Mamba than Transformers. Lastly, we demonstrate how to effectively combine multiple PEFT methods and provide a framework that outperforms previous works. To ensure reproducibility, we will release the code after publication.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image and abstract section -->
+<section class="section hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <!-- Image column -->
+        <div class="column is-two-fifths">
+          <figure class="image">
+            <img src="static/images/mambapeft_overview.png" alt="MambaPEFT overview" class="responsive-image">
+          </figure>
+        </div>
+        <!-- Abstract column -->
+        <div class="column is-three-fifths">
+          <h2 class="title is-3">Overview</h2>
+          <div class="level-set has-text-justified">
+            <p>
+              We investigate, improve, and propose 20 variations of seven PEFT methods for Mamba and search for the best combination and the best hyperparameters.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End image and abstract section -->
+
+
+<section class="section hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">New PEFT methods designed for Mamba</h2>
+          <div class="level-set has-text-justified">
+            <p>
+              (a) Prefix-tuning designed for Transformer. It can’t be applied to Mamba. (b) The proposed Affix-tuning, which we re-design for Mamba. It discards prefixes after SSM. This design allows us to insert affix tokens at arbitrary locations. (c) Additional-scan that we design for Mamba. In this method, we add a learnable dimension to the hidden state in SSM.
+            </p>
+          </div>
+          <img src="static/images/mambapeft_proposed.png" alt="Proposed Methods" class="center-image">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Image carousel -->
+<section class="section hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <div class="content">
+            <h2 class="title is-3">Results</h2>
+            <div class="level-set has-text-justified">
+              <p>
+                We evaluated on vision and language tasks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item content-wrapper">
+        <!-- Your image here -->
+        <img src="static/images/result_vision.png" alt="MY ALT TEXT" class="responsive-image"/>
+        <h2 class="subtitle has-text-centered">
+          The evaluation on vison tasks. We investigated the effectiveness of each PEFT method.
+        </h2>
+      </div>
+      <div class="item content-wrapper">
+        <!-- Your image here -->
+        <img src="static/images/result_lang.png" alt="MY ALT TEXT" class="responsive-image"/>
+        <h2 class="subtitle has-text-centered">
+          The evaluation on language tasks. The proposed Additional-scan and Affix-tuning work well especially on large Mamba models with a few trainable parameters.
+        </h2>
+      </div>
+      <div class="item content-wrapper">
+        <!-- Your image here -->
+        <img src="static/images/result_scatter.png" alt="MY ALT TEXT" class="responsive-image"/>
+        <h2 class="subtitle has-text-centered">
+         The efficiency of PEFT methods on vision tasks. PEFT for Mamba (Vim) outperforms state-of-the-art PEFT for Transformer (ViT).
+       </h2>
+     </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+<!-- Paper poster -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">ICLR2025 Poster</h2>
+
+      <iframe  src="static/pdfs/ICLR2025_MambaPEFT_poster.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section>
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{yoshimura2024mambapeft,
+        title={MambaPEFT: Exploring Parameter-Efficient Fine-Tuning for Mamba},
+        author={Yoshimura, Masakazu and Hayashi, Teruaki and Maeda, Yota},
+        journal={arXiv preprint arXiv:2411.03855},
+        year={2024}
+      }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            </a>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>

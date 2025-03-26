@@ -1,0 +1,15 @@
+accelerate
+appdirs
+bitsandbytes
+black
+black[jupyter]
+datasets
+fire
+gradio
+# triton==2.3.1
+triton
+transformers
+causal_conv1d
+mamba_ssm
+git+https://github.com/EleutherAI/lm-evaluation-harness.git
+# git+https://github.com/huggingface/transformers@21fac7abba2a37fae86106f87fcf9974fd1e3830
