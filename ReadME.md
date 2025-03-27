@@ -2,7 +2,7 @@
 <h1>MambaPEFT</h1>
 <h3>[ICLR2025] MambaPEFT: Exploring Parameter-Efficient Fine-Tuning for Mamba</h3>
 
-Homepage ([homepage](https://github.com/sony.io/MambaPEFT/)), arXiv Preprint ([arXiv 2411.03855](https://arxiv.org/abs/2411.03855)), ICLR 2025 ([conference paper](https://openreview.net/forum?id=UAKnJMIBwf))
+Homepage ([homepage](https://sony.github.io/MambaPEFT/)), arXiv Preprint ([arXiv 2411.03855](https://arxiv.org/abs/2411.03855)), ICLR 2025 ([conference paper](https://openreview.net/forum?id=UAKnJMIBwf))
 
 </div>
 this is the official implementation of MambaPEFT.  
